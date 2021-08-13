@@ -1,0 +1,309 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #DCDCDC;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("image/backElf.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+wow-card {
+    transform: scale(0.6);
+    position: absolute;
+    top: -150px;
+}
+
+wow-gear {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    width: 700px;
+    -ms-grid-rows: auto 80px;
+    grid-template-rows: auto 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+wow-gear .class-icon {
+    position: absolute;
+    left: -30px;
+    top: -25px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid #73716b;
+    height: 135px;
+}
+
+wow-gear .class-icon img {
+    height: 100%;
+}
+
+wow-gear main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 45px 75px 690px 50px;
+    grid-template-rows: 45px 75px 690px 50px;
+    border-radius: 10px;
+    border: 3px solid #73716b;
+    overflow: hidden;
+}
+
+wow-gear .splinter {
+    background-color: #29221e;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45px auto 45px;
+    grid-template-columns: 45px auto 45px;
+}
+
+wow-gear .splinter h1 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid #73716b;
+    line-height: 40px;
+    font-weight: 100;
+}
+
+wow-gear .splinter button {
+    background: #6a0706;
+    cursor: pointer;
+    color: #d5af06;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    border: none;
+    border-bottom: 2px solid #73716b;
+    border-left: 1px solid #73716b;
+    border-radius: 5px 0px 5px 0px;
+}
+
+wow-gear .donatello {
+    background-color: #29221e;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+wow-gear .donatello p {
+    font-size: 18px;
+}
+
+wow-gear .donatello p .level {
+    color: #c6ab46;
+}
+
+wow-gear .donatello p .class {
+    color: #c48f58;
+}
+
+wow-gear .raphael {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 90px auto 90px;
+    grid-template-columns: 90px auto 90px;
+    padding: 5px;
+    background-color: #29221e;
+}
+
+wow-gear .michelangelo {
+    display: -ms-grid;
+    display: grid;
+    background-color: #29221e;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+wow-gear .michelangelo .gear-list-container {
+    position: relative;
+    width: 260px;
+}
+
+wow-gear .michelangelo gear-list {
+    position: absolute;
+    top: -100%;
+    width: 260px;
+}
+
+character-model {
+    background-image: url("http://www.cedricat.cat/pics/b/35/357507_world-of-warcraft-wallpapers.jpg");
+    background-blend-mode: darken;
+    background-position: 50% 0%;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    padding: 10px;
+    margin: 0 5px;
+    border: 5px solid #3c3c3c;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 7px 10px 6px 3px #1a1a1a7a inset;
+    box-shadow: 7px 10px 6px 3px #1a1a1a7a inset;
+}
+
+character-model img {
+    max-width: 75%;
+    max-height: 75%;
+    width: 90%;
+}
+
+gear-list {
+    display: -ms-grid;
+    display: grid;
+    background-color: #323232;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+gear-list.vertical {
+    -ms-grid-rows: (80px)[auto-fill];
+    grid-template-rows: repeat(auto-fill, 80px);
+}
+
+gear-list.horizontal {
+    -ms-grid-columns: (80px)[auto-fill];
+    grid-template-columns: repeat(auto-fill, 80px);
+}
+
+gear-slot {
+    border: 2px solid purple;
+    border-radius: 10px;
+    display: -ms-grid;
+    display: grid;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    background-size: contain; 
+    z-index: 4;
+}
+
+gear-slot img {
+    width: 100%;
+}
+
+
+.gear-planner-slots-group-slot-cover {
+    background: none !important;
+    bottom: 0;
+    display: block;
+    left: 33.5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.epic{
+    border-color:#a335ee;
+}
+
+.poor{
+    border-color:#9d9d9d;
+}
+
+.common{
+    border-color:#ffffff;
+}
+
+.rare{
+    border-color:#0070dd;
+}
+
+.legendary{
+    border-color:#ff8000;
+}
+
+gear-slot[name="head"] {
+    background-image: url("image/equipment/slot-head.png");
+}
+
+gear-slot[name="neck"] {
+    background-image: url("image/equipment/slot-neck.png");
+}
+
+gear-slot[name="shoulder"] {
+    background-image: url("image/equipment/slot-shoulder.png");
+}
+
+gear-slot[name="cloak"] {
+    background-image: url("image/equipment/slot-back.png");
+}
+
+gear-slot[name="chest"] {
+    background-image: url("image/equipment/slot-chest.png");
+}
+
+gear-slot[name="shirt"] {
+    background-image: url("image/equipment/slot-shirt.png");
+}
+
+gear-slot[name="tabard"] {
+    background-image: url("image/equipment/slot-tabard.png");
+}
+
+gear-slot[name="wrist"] {
+    background-image: url("image/equipment/slot-wrists.png");
+}
+
+gear-slot[name="hands"] {
+    background-image: url("image/equipment/slot-hands.png");
+}
+
+gear-slot[name="waist"] {
+    background-image: url("image/equipment/slot-waist.png");
+}
+
+gear-slot[name="legs"] {
+    background-image: url("image/equipment/slot-legs.png");
+}
+
+gear-slot[name="feet"] {
+    background-image: url("image/equipment/slot-feet.png");
+}
+
+gear-slot[name="finger"] {
+    background-image: url("image/equipment/slot-finger.png");
+}
+
+gear-slot[name="trinket"] {
+    background-image: url("image/equipment/slot-trinket.png");
+}
+
+gear-slot[name="main-hand"] {
+    background-image: url("image/equipment/slot-mainhand.png");
+}
+
+gear-slot[name="off-hand"] {
+    background-image: url("image/equipment/slot-secondaryhand.png");
+}
+
+gear-slot[name="ranged"] {
+    background-image: url("image/equipment/slot-ranged.png");
+}
