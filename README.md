@@ -15,3 +15,4 @@ Equipment Slot: https://wowwiki-archive.fandom.com/wiki/Equipment_slot
 
 Cosas para revisar:
 https://stackoverflow.com/questions/57545334/
+https://develop.battle.net/documentation/world-of-warcraft-classic/game-data-apis
